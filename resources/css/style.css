@@ -5,8 +5,12 @@ body {
   margin: 0;
 }
 
-a, h2, h4 {
+a, h2, h3, h4, h5 {
   color: seashell;
+}
+
+.opacity {
+  opacity: .9;
 }
 
 .header {
@@ -18,6 +22,7 @@ a, h2, h4 {
   border-bottom: 1px solid seashell;
   margin: 0;
   background-color: black;
+  z-index: 5;
 }
 
 .logo {
@@ -62,11 +67,20 @@ a, h2, h4 {
 .text {
   text-align: center;
   background-color: black;
+  margin-top: 10px;
+}
+
+.text h2 {
+  margin-top: 10px;
+}
+
+.text h4 {
+  margin-bottom: 10px
 }
 
 .featured {
   width: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 60px auto;
 }
 
 .featured-items {
@@ -78,8 +92,74 @@ a, h2, h4 {
 .featured-image {
   width: 300px;
   height: 200px;
+  margin: 0;
 }
 
-.with-margin {
+.featured-margin-div {
   margin: 0 50px;
+}
+
+.locations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.locations-mid-div {
+  width: 980px;
+  height: 400px;
+}
+
+.locations-mid-div h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.location-div {
+  display: flex;
+  justify-content: center;
+}
+
+.location {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+  height: 280px;
+  background-color: black;
+}
+
+.location h4, .location h3 {
+  margin: 0;
+  opacity: .9;
+}
+
+.location-margin-div {
+  margin: 0 40px;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+}
+
+.footer-div h2 {
+  margin: 10px 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+footer {
+  width: 100%;
+  padding-left: 20px;
+  text-align: left;
 }
